@@ -1,3 +1,4 @@
+using System;
 namespace CSDataStructures.DataStructures
 {
     public class Stack
@@ -10,10 +11,14 @@ namespace CSDataStructures.DataStructures
         }
         public object pop()
         {
-            var aux =top.current;
-            node proximo = top.next;
-            top = proximo;
-            return aux;
+            if(top == null)
+            {
+                throw new InvalidOperationException("The Stack is empty");
+            }
+            object output = top.current;
+            node next = top.next;
+            top = next;
+            return output;
         }
 
         public class node
