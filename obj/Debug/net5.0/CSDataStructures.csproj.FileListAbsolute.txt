@@ -1,0 +1,16 @@
+C:\Users\Ricardo\CSDataStructures\obj\Debug\net5.0\CSDataStructures.csproj.AssemblyReference.cache
+C:\Users\Ricardo\CSDataStructures\obj\Debug\net5.0\CSDataStructures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ricardo\CSDataStructures\obj\Debug\net5.0\CSDataStructures.AssemblyInfoInputs.cache
+C:\Users\Ricardo\CSDataStructures\obj\Debug\net5.0\CSDataStructures.AssemblyInfo.cs
+C:\Users\Ricardo\CSDataStructures\obj\Debug\net5.0\CSDataStructures.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\CSDataStructures\bin\Debug\net5.0\CSDataStructures.exe
+C:\Users\Ricardo\CSDataStructures\bin\Debug\net5.0\CSDataStructures.deps.json
+C:\Users\Ricardo\CSDataStructures\bin\Debug\net5.0\CSDataStructures.runtimeconfig.json
+C:\Users\Ricardo\CSDataStructures\bin\Debug\net5.0\CSDataStructures.runtimeconfig.dev.json
+C:\Users\Ricardo\CSDataStructures\bin\Debug\net5.0\CSDataStructures.dll
+C:\Users\Ricardo\CSDataStructures\bin\Debug\net5.0\ref\CSDataStructures.dll
+C:\Users\Ricardo\CSDataStructures\bin\Debug\net5.0\CSDataStructures.pdb
+C:\Users\Ricardo\CSDataStructures\obj\Debug\net5.0\CSDataStructures.dll
+C:\Users\Ricardo\CSDataStructures\obj\Debug\net5.0\ref\CSDataStructures.dll
+C:\Users\Ricardo\CSDataStructures\obj\Debug\net5.0\CSDataStructures.pdb
+C:\Users\Ricardo\CSDataStructures\obj\Debug\net5.0\CSDataStructures.genruntimeconfig.cache
