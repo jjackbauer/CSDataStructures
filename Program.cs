@@ -7,7 +7,7 @@ namespace CSDataStructures
     {
         static void Main(string[] args)
         {
-             var s = new Stack();
+            var s = new Stack();
             s.push(1);
             s.push(100);
             s.push("AE");
