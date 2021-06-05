@@ -4,9 +4,14 @@ namespace CSDataStructures.DataStructures
     public class Stack
     {
          node top;
-
+         int size;
+        public Stack()
+        {
+            size=0;
+        }
         public void push(object item)
         {
+            size++;
             top = new node(top,item);
         }
         public object pop()
@@ -18,20 +23,38 @@ namespace CSDataStructures.DataStructures
             object output = top.current;
             node next = top.next;
             top = next;
+            size--;
             return output;
         }
-
-        public class node
+        public void save(string filename)
         {
-            public object current;
-            public node next;
-
-            public node(node proximo,object item)
+             using (System.IO.TextWriter w = System.IO.File.CreateText(filename))
             {
-                this.next = proximo;
-                this.current=item;
+                var aux = new Stack();
+                while(this.size > 0 )
+                {  
+                    object top = this.pop();
+                    aux.push(top);
+                    w.WriteLine(top);
+                }
+
+                while(aux.size > 0 )
+                    this.push(aux.pop());
             }
 
+            return;
         }
+    }
+    public class node
+    {
+        public object current;
+        public node next;
+
+        public node(node proximo,object item)
+        {
+            this.next = proximo;
+            this.current=item;
+        }
+
     }
 }

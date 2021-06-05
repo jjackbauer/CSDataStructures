@@ -11,6 +11,7 @@ namespace CSDataStructures
             s.push(1);
             s.push(100);
             s.push("AE");
+            s.save("Stack.txt");
             Console.WriteLine(s.pop());
             Console.WriteLine(s.pop());
             Console.WriteLine(s.pop());
