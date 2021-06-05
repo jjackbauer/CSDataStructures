@@ -9,4 +9,4 @@
 
 ## Currently Implemented Data Structures:
     - Stack
-    
+    - Queue

@@ -20,8 +20,8 @@ namespace CSDataStructures.DataStructures
             {
                 throw new InvalidOperationException("The Stack is empty");
             }
-            object output = top.current;
-            Node next = top.next;
+            object output = top.getCurrent();
+            Node next = top.getNext();
             top = next;
             size--;
             return output;

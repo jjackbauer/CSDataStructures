@@ -10,5 +10,13 @@ namespace CSDataStructures.DataStructures
             this.next = next;
             this.current=item;
         }
+        public object getCurrent()
+        {
+            return this.current;
+        }
+        public Node getNext()
+        {
+            return this.next;
+        }
     }
 }

@@ -32,8 +32,9 @@ namespace CSDataStructures.DataStructures
                 throw new InvalidOperationException("The Queue is empty");
             }
            
-                var aux = frist.current;
-                frist = frist.next;
+                object aux = frist.getCurrent();
+                Node next = frist.getNext();
+                frist = next;
 
                 if(size == 1)
                     last=null;
@@ -51,8 +52,10 @@ namespace CSDataStructures.DataStructures
                 while(this.size > 0 )
                 {
                     object first = this.Dequeue();
-                    w.WriteLine(frist);
+                    //Console.WriteLine(frist);
                     aux.Enqueue(first);
+                    w.WriteLine(frist);
+                    
                 }
                 while(aux.size > 0 )
                     this.Enqueue(aux.Dequeue());
