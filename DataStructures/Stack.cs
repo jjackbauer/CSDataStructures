@@ -3,7 +3,7 @@ namespace CSDataStructures.DataStructures
 {
     public class Stack
     {
-         node top;
+         Node top;
          int size;
         public Stack()
         {
@@ -12,7 +12,7 @@ namespace CSDataStructures.DataStructures
         public void push(object item)
         {
             size++;
-            top = new node(top,item);
+            top = new Node(top,item);
         }
         public object pop()
         {
@@ -21,7 +21,7 @@ namespace CSDataStructures.DataStructures
                 throw new InvalidOperationException("The Stack is empty");
             }
             object output = top.current;
-            node next = top.next;
+            Node next = top.next;
             top = next;
             size--;
             return output;
@@ -41,20 +41,6 @@ namespace CSDataStructures.DataStructures
                 while(aux.size > 0 )
                     this.push(aux.pop());
             }
-
-            return;
         }
-    }
-    public class node
-    {
-        public object current;
-        public node next;
-
-        public node(node proximo,object item)
-        {
-            this.next = proximo;
-            this.current=item;
-        }
-
     }
 }
