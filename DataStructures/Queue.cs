@@ -3,7 +3,7 @@ namespace CSDataStructures.DataStructures
 {
     public class Queue
     {
-        Node frist;
+        Node first;
         Node last;
         int size;
         public Queue()
@@ -15,8 +15,8 @@ namespace CSDataStructures.DataStructures
             var aux = new Node(null, item);
             if(size == 0)
             {
-                frist = aux;
-                last = frist;
+                first = aux;
+                last = first;
             }
             else
             {
@@ -32,9 +32,9 @@ namespace CSDataStructures.DataStructures
                 throw new InvalidOperationException("The Queue is empty");
             }
            
-                object aux = frist.getCurrent();
-                Node next = frist.getNext();
-                frist = next;
+                object aux = first.getCurrent();
+                Node next = first.getNext();
+                first = next;
 
                 if(size == 1)
                     last=null;
@@ -52,9 +52,8 @@ namespace CSDataStructures.DataStructures
                 while(this.size > 0 )
                 {
                     object first = this.Dequeue();
-                    //Console.WriteLine(frist);
                     aux.Enqueue(first);
-                    w.WriteLine(frist);
+                    w.WriteLine(first);
                     
                 }
                 while(aux.size > 0 )
